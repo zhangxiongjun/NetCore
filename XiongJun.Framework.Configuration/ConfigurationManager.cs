@@ -8,9 +8,10 @@ namespace XiongJun.Framework.Configuration
 {
     public class ConfigurationManager
     {
-        public T GetAppSetting<T>(string key) where T : class, new()
+        public static T GetAppSetting<T>(string key) where T : class, new()
         {
-            var baseDir = AppContext.BaseDirectory;
+            //获取json文件的路径
+            var baseDir = AppContext.BaseDirectory+"Config";
             IConfiguration configuration=new ConfigurationBuilder()
                 .SetBasePath(baseDir)
                 .Add(new JsonConfigurationSource { Path = "appsettings.json", Optional = false, ReloadOnChange = true })

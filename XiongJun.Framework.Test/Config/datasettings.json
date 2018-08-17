@@ -1,0 +1,24 @@
+{
+  "PublicConfig": {
+    
+  },
+
+  "RedisConfig": {
+    "RedisCachingEnabled": false,
+    "Ip": "", //ip获取域名
+    "Port": "", //端口
+    "Password": "", //密码
+    "ConnectTimeout": "", //超时时间
+    "ConnectRetry": "", //重连次数
+    "SyncTimeout": "" //同步操作默认超时时间
+  },
+  "SQLServerConfig": {
+    "ProviderName": "System.Data.SqlClient",
+    "ConnectionString": "Data Source=.;Initial Catalog=nop_4.0;Integrated Security=False;Persist Security Info=False;User ID=sa;Password=admin@ts.com"
+  },
+  "MySQLConfig": {
+    "ProviderName": "MySql.Data.MySqlClient",
+    "ConnectionString": "server=localhost;user id=root;password=123456;database=ABC; pooling=true;"
+  }
+
+}
