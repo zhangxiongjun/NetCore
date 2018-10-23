@@ -3,15 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Framework.Core", "XiongJun.Framework.Core\XiongJun.Framework.Core.csproj", "{8BA07E6B-4B07-4C08-863B-B860B84139B6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{58A2DA0D-19EF-4A59-B13A-9D16021CC3A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiongJun.Framework.Configuration", "XiongJun.Framework.Configuration\XiongJun.Framework.Configuration.csproj", "{6D603C32-A04A-45DD-B31A-F62514846ECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Framework.Configuration", "XiongJun.Framework.Configuration\XiongJun.Framework.Configuration.csproj", "{6D603C32-A04A-45DD-B31A-F62514846ECC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XiongJun.UnitTest", "XiongJun.UnitTest", "{3E03DD42-BE19-4963-83FF-90DC6E8B852A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiongJun.Framework.Test", "XiongJun.Framework.Test\XiongJun.Framework.Test.csproj", "{CDDCAE45-F1D9-4078-B55D-7E6FF28AFEB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Framework.Cache", "XiongJun.Framework.Cache\XiongJun.Framework.Cache.csproj", "{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{121F2732-0A2E-4339-AE58-348727319927}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Web.MiddleWare", "XiongJun.Web.MiddleWare\XiongJun.Web.MiddleWare.csproj", "{F81A4279-3C03-4D59-8ACA-A471D0ECF355}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Framework.Core", "XiongJun.Framework.Core\XiongJun.Framework.Core.csproj", "{33DDF854-FA00-416C-B0BE-5C94AABA5B24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{B0C0E074-6CD2-472B-B446-B5AED71A719B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiongJun.Services", "XiongJun.Services\XiongJun.Services.csproj", "{017BC2DA-D030-4854-997B-A267A8BF91DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiongJun.Web.Framework", "XiongJun.Web.Framework\XiongJun.Web.Framework.csproj", "{1C64A027-01D0-4557-BC1C-285D20C4FD91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8BA07E6B-4B07-4C08-863B-B860B84139B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BA07E6B-4B07-4C08-863B-B860B84139B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BA07E6B-4B07-4C08-863B-B860B84139B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BA07E6B-4B07-4C08-863B-B860B84139B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D603C32-A04A-45DD-B31A-F62514846ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D603C32-A04A-45DD-B31A-F62514846ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D603C32-A04A-45DD-B31A-F62514846ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,6 +39,26 @@ Global
 		{CDDCAE45-F1D9-4078-B55D-7E6FF28AFEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDDCAE45-F1D9-4078-B55D-7E6FF28AFEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDDCAE45-F1D9-4078-B55D-7E6FF28AFEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81A4279-3C03-4D59-8ACA-A471D0ECF355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81A4279-3C03-4D59-8ACA-A471D0ECF355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81A4279-3C03-4D59-8ACA-A471D0ECF355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81A4279-3C03-4D59-8ACA-A471D0ECF355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33DDF854-FA00-416C-B0BE-5C94AABA5B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33DDF854-FA00-416C-B0BE-5C94AABA5B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33DDF854-FA00-416C-B0BE-5C94AABA5B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33DDF854-FA00-416C-B0BE-5C94AABA5B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017BC2DA-D030-4854-997B-A267A8BF91DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017BC2DA-D030-4854-997B-A267A8BF91DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017BC2DA-D030-4854-997B-A267A8BF91DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017BC2DA-D030-4854-997B-A267A8BF91DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C64A027-01D0-4557-BC1C-285D20C4FD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C64A027-01D0-4557-BC1C-285D20C4FD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C64A027-01D0-4557-BC1C-285D20C4FD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C64A027-01D0-4557-BC1C-285D20C4FD91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +66,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6D603C32-A04A-45DD-B31A-F62514846ECC} = {58A2DA0D-19EF-4A59-B13A-9D16021CC3A1}
 		{CDDCAE45-F1D9-4078-B55D-7E6FF28AFEB9} = {3E03DD42-BE19-4963-83FF-90DC6E8B852A}
+		{E0EBA773-7FEA-45C3-9E8B-B70F0E9E926F} = {58A2DA0D-19EF-4A59-B13A-9D16021CC3A1}
+		{F81A4279-3C03-4D59-8ACA-A471D0ECF355} = {121F2732-0A2E-4339-AE58-348727319927}
+		{33DDF854-FA00-416C-B0BE-5C94AABA5B24} = {58A2DA0D-19EF-4A59-B13A-9D16021CC3A1}
+		{017BC2DA-D030-4854-997B-A267A8BF91DE} = {B0C0E074-6CD2-472B-B446-B5AED71A719B}
+		{1C64A027-01D0-4557-BC1C-285D20C4FD91} = {121F2732-0A2E-4339-AE58-348727319927}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E06002F-1039-497C-9103-8AD03F95B0C6}

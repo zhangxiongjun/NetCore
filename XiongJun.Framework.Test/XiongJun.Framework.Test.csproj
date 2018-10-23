@@ -102,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Config\appconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Config\datasettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

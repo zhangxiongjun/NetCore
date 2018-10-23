@@ -11,7 +11,7 @@ namespace XiongJun.Framework.Test
     {
         static void Main(string[] args)
         {
-           
+            var config = ConfigurationManager.GetAppSetting<RedisConfig>("RedisConfig", "datasettings");
 
 
         }
