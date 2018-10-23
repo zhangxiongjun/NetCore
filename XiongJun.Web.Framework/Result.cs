@@ -9,5 +9,6 @@ namespace XiongJun.Web.Framework
     /// </summary>
     public class Result
     {
+
     }
 }
